@@ -1,73 +1,91 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from "react";
+import { Link } from "react-router-dom";
 
-function Footer() {
-    return (
-       <footer class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-4 offset-1 col-sm-2">
+function Footer(props) {
+  return (
+    <div className="footer">
+      <div className="container">
+        <div className="row justify-content-center">
+          <div className="col-4 offset-1 col-sm-2">
             <h5>Links</h5>
-            <ul class="list-unstyled">
-              <li><Link to="/home">Home</Link></li>
-              <li><Link to="/aboutus">About Us</Link></li>
-              <li><Link to="/menu">Menu</Link></li>
-              <li><Link to="/contactus">Contact</Link></li>
+            <ul className="list-unstyled">
+              <li>
+                <Link to="/home">Home</Link>
+              </li>
+              <li>
+                <Link to="/aboutus">About Us</Link>
+              </li>
+              <li>
+                <Link to="/menu">Menu</Link>
+              </li>
+              <li>
+                <Link to="/contactus">Contact Us</Link>
+              </li>
             </ul>
           </div>
-          <div class="col-7 col-sm-5">
+          <div className="col-7 col-sm-5">
             <h5>Our Address</h5>
             <address>
-              121, Clear Water Bay Road<br />
-              Clear Water Bay, Kowloon<br />
-              HONG KONG<br />
-              <i class="fa fa-phone fa-lg"></i>: +852 1234 5678<br />
-              <i class="fa fa-fax fa-lg"></i>: +852 8765 4321<br />
-              <i class="fa fa-envelope fa-lg"></i>:
+              121, Clear Water Bay Road
+              <br />
+              Clear Water Bay, Kowloon
+              <br />
+              HONG KONG
+              <br />
+              <i className="fa fa-phone fa-lg" />: +852 1234 5678
+              <br />
+              <i className="fa fa-fax fa-lg" />: +852 8765 4321
+              <br />
+              <i className="fa fa-envelope fa-lg" />:{" "}
               <a href="mailto:confusion@food.net">confusion@food.net</a>
             </address>
           </div>
-          <div class="col-12 col-sm-4 align-self-center">
-            <div class="text-center">
+          <div className="col-12 col-sm-4 align-self-center">
+            <div className="text-center">
               <a
-                class="btn btn-social-icon btn-google"
+                className="btn btn-social-icon btn-google"
                 href="http://google.com/+"
-                ><i class="fa fa-google-plus"></i
-              ></a>
+              >
+                <i className="fa fa-google-plus" />
+              </a>
               <a
-                class="btn btn-social-icon btn-facebook"
+                className="btn btn-social-icon btn-facebook"
                 href="http://www.facebook.com/profile.php?id="
-                ><i class="fa fa-facebook"></i
-              ></a>
+              >
+                <i className="fa fa-facebook" />
+              </a>
               <a
-                class="btn btn-social-icon btn-linkedin"
+                className="btn btn-social-icon btn-linkedin"
                 href="http://www.linkedin.com/in/"
-                ><i class="fa fa-linkedin"></i
-              ></a>
+              >
+                <i className="fa fa-linkedin" />
+              </a>
               <a
-                class="btn btn-social-icon btn-twitter"
+                className="btn btn-social-icon btn-twitter"
                 href="http://twitter.com/"
-                ><i class="fa fa-twitter"></i
-              ></a>
+              >
+                <i className="fa fa-twitter" />
+              </a>
               <a
-                class="btn btn-social-icon btn-google"
+                className="btn btn-social-icon btn-google"
                 href="http://youtube.com/"
-                ><i class="fa fa-youtube"></i
-              ></a>
-              <a class="btn btn-social-icon" href="mailto:"
-                ><i class="fa fa-envelope-o"></i
-              ></a>
+              >
+                <i className="fa fa-youtube" />
+              </a>
+              <a className="btn btn-social-icon" href="mailto:">
+                <i className="fa fa-envelope-o" />
+              </a>
             </div>
           </div>
         </div>
-        <div class="row justify-content-center">
-          <div class="col-auto">
+        <div className="row justify-content-center">
+          <div className="col-auto">
             <p>© Copyright 2018 Ristorante Con Fusion</p>
           </div>
         </div>
       </div>
-    </footer>
-    )
+    </div>
+  );
 }
 
-export default Footer
+export default Footer;
